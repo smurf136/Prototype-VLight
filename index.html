@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/gh/photonstorm/phaser@3.10.1/dist/phaser.min.js"></script>
+        <script src="js/game.js"></script>
+        <script>
+            if('serviceWorker' in navigator){
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(function(registration) {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err){
+                        console.log('ServiceWorker registration failed: ',err);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
