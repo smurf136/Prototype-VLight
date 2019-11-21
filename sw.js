@@ -3,9 +3,10 @@ var filesToCache = [
     '/',
     '/index.html',
     '/img/logo.png',
-    '/img/icon-192.png',
-    '/img/icon-256.png',
-    '/img/icon-512.png',
+    // '/img/icon-192.png',
+    // '/img/icon-256.png',
+    // '/img/icon-512.png',
+    '/img/logo_vlight.png',
     '/js/game.js',
     '/css/style.css',
     'https://cdn.jsdelivr.net/gh/photonstorm/phaser@3.10.1/dist/phaser.min.js'
